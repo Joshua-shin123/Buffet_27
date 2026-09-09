@@ -9,8 +9,12 @@ class starter {
 	public static void main(String args[]) {
 		// the string "I love to learn coding remotely." will appear in
 		// the command window when you compile and run this program.
-		System.out.print(A); 
-String A = new String("Happy Birthday, To You");
+		String Banana = new String("Happy birthday to you");
+		String Baseball = new String("Happy Birthday dear Noah");
+		System.out.println(Banana); 
+		System.out.println(Banana); 
+		System.out.println(Baseball); 
+		System.out.println(Banana); 
 
 
 

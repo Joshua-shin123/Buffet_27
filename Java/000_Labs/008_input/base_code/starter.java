@@ -1,5 +1,5 @@
 /*
- *	Author:  Joshua
+ *	Author:  Joshua Shin
  *  Date: 9/10/26
 */
 
@@ -31,7 +31,14 @@ class starter {
 		double item1Total = item1Price * item1Amount;
 		double item2Total = item2Price * item2Amount;
 		double item3Total = item3Price * item3Amount;
-		System.out.println("Total is" + item1Total + item2Total = item3Total;)
+		double grandTotal = (item1Total + item2Total + item3Total);
+		System.out.println("Total is: $" + grandTotal);
+
+		System.out.println("How much would you like to tip?");
+		double tip = sc.nextDouble();
+		tip = (tip/100) * grandTotal;
+
+		System.out.println("Tip and Total is " + (tip + grandTotal));
 
 	}
 }

@@ -1,6 +1,6 @@
 /*
- *	Author:  
- *  Date: 
+ *	Author:  Joshua Shin
+ *  Date: 9/25/26
 */
 
 import java.util.Scanner;
@@ -9,6 +9,38 @@ class starter {
 	public static void main(String args[]) {
 		// the string "I love to learn coding remotely." will appear in
 		// the command window when you compile and run this program.
-		System.out.print("I love to learn coding remotely."); 
+		System.out.print("Please enter your first number: "); 
+		Scanner sc = new Scanner(System.in);
+		int a = sc.nextInt();
+		System.out.print("Please enter your second number: ");
+		int b = sc.nextInt();
+		System.out.print("PLease enter your third number: ");
+		int c = sc.nextInt();
+
+		if((a > b) && (a > c)){
+			System.out.println("Your first number is the largest of the three!");
+			System.out.println("The number was " + a + ".");
+		}
+		if((b > a) && (b > c)){
+			System.out.println("Your second number is the largest of the three!");
+			System.out.println("The number was " + b + ".");
+		}
+		if((c > a) && (c > b)){
+			System.out.println("Your third number is the largest of the three!");
+			System.out.println("The number was " + c + ".");
+		}
+
+		if((a < b) && (a < c)){
+			System.out.println("Your first number is the smallest of the three!");
+			System.out.println("The number was " + a + ".");
+		}
+		if((b < a) && (b < c)){
+			System.out.println("Your second number is the smallest of the three!");
+			System.out.println("The number was " + b + ".");
+		}
+		if((c < a) && (c < b)){
+			System.out.println("Your third number is the smallest of the three!");
+			System.out.println("The number was " + c + ".");
+		}
 	}
 }

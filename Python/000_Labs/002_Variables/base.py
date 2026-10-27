@@ -1,0 +1,8 @@
+rooster1 = ("Ain't found a way to kill me yet")
+rooster2 = ("Seems every path leads me to nowhere")
+rooster3 = ("Army green was no safe bet")
+print(rooster1)
+print("Eyes burn with stinging sweat")
+print(rooster2)
+print("Wife and kids and household pet")
+print(rooster3)

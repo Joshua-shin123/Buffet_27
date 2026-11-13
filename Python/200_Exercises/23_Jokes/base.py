@@ -1,12 +1,20 @@
 import requests
-joke = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single").json()
-#joke2Part = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").json()
 
-# Jokes with 1 part just have a joke
-# joke["joke"] -> References the String of the joke itself
+number = int(input("How many jokes would you like to see? "))
+kind = input("Do you want single or two part jokes? ")
 
+if kind == "single" or "singles":
+    for x in range(0,number):
+        joke = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single").json()
+        joke2Part = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").json()
+        print(joke["joke"])
 
-# Jokes with 2 parts have a set up and delivery
-# joke["setup"] -> References the String of the setup of the joke
-# joke["delivery"] -> References the String of the delivery part of the joke
+elif kind == "two part" or "twopart" or "two parts":
+    for x in range(0,number):
+        joke = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=single").json()
+        joke2Part = requests.get("https://v2.jokeapi.dev/joke/Any?blacklistFlags=nsfw,religious,political,racist,sexist,explicit&type=twopart").json()
+        print(joke["setup"])
+        print(joke["delivery"])
 
+else:
+    print("You didn't pick doubles or singles.")
